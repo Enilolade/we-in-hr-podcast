@@ -1,0 +1,80 @@
+* {
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+}
+.navbar {
+    background-color: #f29727 !important;
+    width: 100% !important;
+}
+.navbar-brand {
+    font-size: 2rem;
+}
+.we-in-hr-logo {
+    /* font-size: 0.8rem !important; */
+    width: 5rem;
+}
+.nav-link {
+    font-size: 1.5rem;
+}
+#hero-section {
+    background-image: url(../Images/hero-banner-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 70vh;
+    position: relative;
+}
+
+.episode-container {
+    margin: auto;
+    padding-top: 2rem;
+    text-align: center;
+    width: 90%;
+}
+.episode-container > div {
+    background-color: #f29727;
+    border: 3px solid #f29727;
+    border-radius: 30px;
+}
+.episode-image {
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+}
+.footer-container {
+    font-size: 0.9rem;
+    margin: auto;
+    width: 50%;
+}
+@media (min-width: 320px) and (max-width: 600px){
+    .episode-container > div {
+        margin: 1rem auto;
+        width: 90%;
+    }
+}
+@media (min-width: 600px){
+    #hero-section {
+        background-image: url(../Images/hero-banner.png);
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media (min-width: 600px) and (max-width: 999px){
+    .episode-container {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media (min-width: 1000px){
+    .episode-container {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
